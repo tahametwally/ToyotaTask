@@ -1,0 +1,6 @@
+framework module Pods_ToyotaTask_ToyotaTaskUITests {
+  umbrella header "Pods-ToyotaTask-ToyotaTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

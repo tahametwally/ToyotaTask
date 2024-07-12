@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6032EC382D9C880A8CDF309E /* Pods_ToyotaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE9005E6F2E35D3D5CD5B06 /* Pods_ToyotaTaskTests.framework */; };
+		822D03BE230033A7F1B652F4 /* Pods_ToyotaTask_ToyotaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D845A848466005DBAB25D0EF /* Pods_ToyotaTask_ToyotaTaskUITests.framework */; };
+		B6E56C68FBCEDD5C33C0861B /* Pods_ToyotaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522605CA1757BB285DE13330 /* Pods_ToyotaTask.framework */; };
+		F208EA262C12583F0040F4D1 /* ToyotaTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EA252C12583F0040F4D1 /* ToyotaTaskApp.swift */; };
+		F208EA282C12583F0040F4D1 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208EA272C12583F0040F4D1 /* LaunchScreenView.swift */; };
+		F208EA2A2C1258400040F4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F208EA292C1258400040F4D1 /* Assets.xcassets */; };
+		F2673AED2C1266CF00740EFD /* MyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2673AEC2C1266CF00740EFD /* MyAPI.swift */; };
+		F2673AEF2C12675A00740EFD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2673AEE2C12675A00740EFD /* NetworkService.swift */; };
+		F28C2C932C14C5A30046BEC9 /* MealsResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2C922C14C5A30046BEC9 /* MealsResponseTests.swift */; };
+		F28C2C952C14C60F0046BEC9 /* MealDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2C942C14C60F0046BEC9 /* MealDetailsTests.swift */; };
+		F28C2C972C14C6930046BEC9 /* CategoriesResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2C962C14C6930046BEC9 /* CategoriesResponseTests.swift */; };
+		F28C2C9B2C14CDE90046BEC9 /* MyAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2C9A2C14CDE90046BEC9 /* MyAPITests.swift */; };
+		F28C2C9D2C14D2390046BEC9 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2C9C2C14D2390046BEC9 /* NetworkServiceTests.swift */; };
+		F28C2CA12C14DCDB0046BEC9 /* StringLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CA02C14DCDB0046BEC9 /* StringLocalizationTests.swift */; };
+		F28C2CA32C14DD360046BEC9 /* AppDependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CA22C14DD360046BEC9 /* AppDependenciesTests.swift */; };
+		F28C2CA52C14DF4B0046BEC9 /* MealsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CA42C14DF4B0046BEC9 /* MealsViewModelTests.swift */; };
+		F28C2CA72C14F8330046BEC9 /* MealDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CA62C14F8330046BEC9 /* MealDetailViewModelTests.swift */; };
+		F28C2CAB2C14FEB90046BEC9 /* LaunchScreenViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CAA2C14FEB90046BEC9 /* LaunchScreenViewUITests.swift */; };
+		F28C2CB52C1602630046BEC9 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CB42C1602630046BEC9 /* CategoryPickerView.swift */; };
+		F28C2CB72C1603080046BEC9 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CB62C1603080046BEC9 /* SearchTextFieldView.swift */; };
+		F28C2CB92C16033D0046BEC9 /* MealsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CB82C16033D0046BEC9 /* MealsList.swift */; };
+		F28C2CBB2C1606EB0046BEC9 /* NoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CBA2C1606EB0046BEC9 /* NoResultsView.swift */; };
+		F28C2CBD2C1607CA0046BEC9 /* IngredientsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CBC2C1607CA0046BEC9 /* IngredientsListView.swift */; };
+		F28C2CBF2C1608010046BEC9 /* MealInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28C2CBE2C1608010046BEC9 /* MealInfoView.swift */; };
+		F2AF26982C359D4200ECB3EC /* SearchOptionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AF26972C359D4200ECB3EC /* SearchOptionPicker.swift */; };
+		F2D783B72C13EE11001BF9A3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F2D783B62C13EE11001BF9A3 /* Localizable.xcstrings */; };
+		F2D783B92C13EF90001BF9A3 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D783B82C13EF90001BF9A3 /* String+Localization.swift */; };
+		F2FF5BED2C126B1C00F00A28 /* MealsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BEC2C126B1C00F00A28 /* MealsResponse.swift */; };
+		F2FF5BEF2C126CD400F00A28 /* MealDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BEE2C126CD400F00A28 /* MealDetailsResponse.swift */; };
+		F2FF5BF22C12858C00F00A28 /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BF12C12858C00F00A28 /* MealsViewModel.swift */; };
+		F2FF5BF42C1285AD00F00A28 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BF32C1285AD00F00A28 /* MealDetailViewModel.swift */; };
+		F2FF5BF72C1285F700F00A28 /* MealsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BF62C1285F700F00A28 /* MealsListView.swift */; };
+		F2FF5BF92C12861900F00A28 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BF82C12861900F00A28 /* MealDetailView.swift */; };
+		F2FF5BFC2C134E1800F00A28 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BFB2C134E1800F00A28 /* CategoriesResponse.swift */; };
+		F2FF5BFE2C1399EF00F00A28 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5BFD2C1399EF00F00A28 /* Reachability.swift */; };
+		F2FF5C012C139FA500F00A28 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FF5C002C139FA500F00A28 /* AppDependencies.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F208EA382C1258400040F4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F208EA1A2C12583F0040F4D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F208EA212C12583F0040F4D1;
+			remoteInfo = FetchRewards;
+		};
+		F208EA422C1258400040F4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F208EA1A2C12583F0040F4D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F208EA212C12583F0040F4D1;
+			remoteInfo = FetchRewards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0298F5E7791BC84878BF7ACC /* Pods-ToyotaTask-ToyotaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTask-ToyotaTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToyotaTask-ToyotaTaskUITests/Pods-ToyotaTask-ToyotaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BE9005E6F2E35D3D5CD5B06 /* Pods_ToyotaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyotaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E2AD106A2370248F6BC5E00 /* Pods-FetchRewardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewardsTests.release.xcconfig"; path = "Target Support Files/Pods-FetchRewardsTests/Pods-FetchRewardsTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B52C6B3FFCEC8FB2E192D4A /* Pods-FetchRewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards.release.xcconfig"; path = "Target Support Files/Pods-FetchRewards/Pods-FetchRewards.release.xcconfig"; sourceTree = "<group>"; };
+		344F8F14D4BDD96140EDEC76 /* Pods-FetchRewardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewardsTests.debug.xcconfig"; path = "Target Support Files/Pods-FetchRewardsTests/Pods-FetchRewardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		466C15AAE54C8B767079A334 /* Pods-ToyotaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-ToyotaTaskTests/Pods-ToyotaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		522605CA1757BB285DE13330 /* Pods_ToyotaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyotaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F2C811DBF60ED63B63DCC0 /* Pods-ToyotaTask-ToyotaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTask-ToyotaTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-ToyotaTask-ToyotaTaskUITests/Pods-ToyotaTask-ToyotaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59FC44B7FE97B0627588D31D /* Pods-ToyotaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-ToyotaTaskTests/Pods-ToyotaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6782A3CC86755A4C59C8BD79 /* Pods-FetchRewards-FetchRewardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards-FetchRewardsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FetchRewards-FetchRewardsUITests/Pods-FetchRewards-FetchRewardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		807BF5846A749468593E92CA /* Pods-FetchRewards-FetchRewardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards-FetchRewardsUITests.release.xcconfig"; path = "Target Support Files/Pods-FetchRewards-FetchRewardsUITests/Pods-FetchRewards-FetchRewardsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91A178001CC612CD4C490A02 /* Pods-FetchRewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchRewards.debug.xcconfig"; path = "Target Support Files/Pods-FetchRewards/Pods-FetchRewards.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB590DF941721A1CA1B31B0 /* Pods-ToyotaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTask.debug.xcconfig"; path = "Target Support Files/Pods-ToyotaTask/Pods-ToyotaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		D845A848466005DBAB25D0EF /* Pods_ToyotaTask_ToyotaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToyotaTask_ToyotaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA9D3CA6AB7D6889AF0E288 /* Pods-ToyotaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyotaTask.release.xcconfig"; path = "Target Support Files/Pods-ToyotaTask/Pods-ToyotaTask.release.xcconfig"; sourceTree = "<group>"; };
+		F208EA222C12583F0040F4D1 /* ToyotaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyotaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208EA252C12583F0040F4D1 /* ToyotaTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyotaTaskApp.swift; sourceTree = "<group>"; };
+		F208EA272C12583F0040F4D1 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		F208EA292C1258400040F4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F208EA372C1258400040F4D1 /* ToyotaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyotaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F208EA412C1258400040F4D1 /* ToyotaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyotaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2673AEC2C1266CF00740EFD /* MyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPI.swift; sourceTree = "<group>"; };
+		F2673AEE2C12675A00740EFD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F28C2C922C14C5A30046BEC9 /* MealsResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsResponseTests.swift; sourceTree = "<group>"; };
+		F28C2C942C14C60F0046BEC9 /* MealDetailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsTests.swift; sourceTree = "<group>"; };
+		F28C2C962C14C6930046BEC9 /* CategoriesResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponseTests.swift; sourceTree = "<group>"; };
+		F28C2C9A2C14CDE90046BEC9 /* MyAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPITests.swift; sourceTree = "<group>"; };
+		F28C2C9C2C14D2390046BEC9 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		F28C2CA02C14DCDB0046BEC9 /* StringLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizationTests.swift; sourceTree = "<group>"; };
+		F28C2CA22C14DD360046BEC9 /* AppDependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesTests.swift; sourceTree = "<group>"; };
+		F28C2CA42C14DF4B0046BEC9 /* MealsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModelTests.swift; sourceTree = "<group>"; };
+		F28C2CA62C14F8330046BEC9 /* MealDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModelTests.swift; sourceTree = "<group>"; };
+		F28C2CAA2C14FEB90046BEC9 /* LaunchScreenViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewUITests.swift; sourceTree = "<group>"; };
+		F28C2CB42C1602630046BEC9 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		F28C2CB62C1603080046BEC9 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
+		F28C2CB82C16033D0046BEC9 /* MealsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsList.swift; sourceTree = "<group>"; };
+		F28C2CBA2C1606EB0046BEC9 /* NoResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultsView.swift; sourceTree = "<group>"; };
+		F28C2CBC2C1607CA0046BEC9 /* IngredientsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsListView.swift; sourceTree = "<group>"; };
+		F28C2CBE2C1608010046BEC9 /* MealInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealInfoView.swift; sourceTree = "<group>"; };
+		F2AF26972C359D4200ECB3EC /* SearchOptionPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchOptionPicker.swift; sourceTree = "<group>"; };
+		F2D783B62C13EE11001BF9A3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F2D783B82C13EF90001BF9A3 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		F2FF5BEC2C126B1C00F00A28 /* MealsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsResponse.swift; sourceTree = "<group>"; };
+		F2FF5BEE2C126CD400F00A28 /* MealDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailsResponse.swift; sourceTree = "<group>"; };
+		F2FF5BF12C12858C00F00A28 /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
+		F2FF5BF32C1285AD00F00A28 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
+		F2FF5BF62C1285F700F00A28 /* MealsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListView.swift; sourceTree = "<group>"; };
+		F2FF5BF82C12861900F00A28 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		F2FF5BFB2C134E1800F00A28 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		F2FF5BFD2C1399EF00F00A28 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F2FF5C002C139FA500F00A28 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F208EA1F2C12583F0040F4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E56C68FBCEDD5C33C0861B /* Pods_ToyotaTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA342C1258400040F4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6032EC382D9C880A8CDF309E /* Pods_ToyotaTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA3E2C1258400040F4D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822D03BE230033A7F1B652F4 /* Pods_ToyotaTask_ToyotaTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AF9AAAE74EC731FD4A3B91F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				522605CA1757BB285DE13330 /* Pods_ToyotaTask.framework */,
+				D845A848466005DBAB25D0EF /* Pods_ToyotaTask_ToyotaTaskUITests.framework */,
+				1BE9005E6F2E35D3D5CD5B06 /* Pods_ToyotaTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8942DBBB1581C378C329A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A178001CC612CD4C490A02 /* Pods-FetchRewards.debug.xcconfig */,
+				2B52C6B3FFCEC8FB2E192D4A /* Pods-FetchRewards.release.xcconfig */,
+				6782A3CC86755A4C59C8BD79 /* Pods-FetchRewards-FetchRewardsUITests.debug.xcconfig */,
+				807BF5846A749468593E92CA /* Pods-FetchRewards-FetchRewardsUITests.release.xcconfig */,
+				344F8F14D4BDD96140EDEC76 /* Pods-FetchRewardsTests.debug.xcconfig */,
+				1E2AD106A2370248F6BC5E00 /* Pods-FetchRewardsTests.release.xcconfig */,
+				9FB590DF941721A1CA1B31B0 /* Pods-ToyotaTask.debug.xcconfig */,
+				EEA9D3CA6AB7D6889AF0E288 /* Pods-ToyotaTask.release.xcconfig */,
+				0298F5E7791BC84878BF7ACC /* Pods-ToyotaTask-ToyotaTaskUITests.debug.xcconfig */,
+				53F2C811DBF60ED63B63DCC0 /* Pods-ToyotaTask-ToyotaTaskUITests.release.xcconfig */,
+				59FC44B7FE97B0627588D31D /* Pods-ToyotaTaskTests.debug.xcconfig */,
+				466C15AAE54C8B767079A334 /* Pods-ToyotaTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F208EA192C12583F0040F4D1 = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BFA2C12867200F00A28 /* Utilities */,
+				F2FF5BEB2C12692500F00A28 /* Models */,
+				F2FF5BF02C12855300F00A28 /* ViewModels */,
+				F2FF5BF52C1285CF00F00A28 /* Views */,
+				F2673AEB2C1266B000740EFD /* Services */,
+				F208EA242C12583F0040F4D1 /* Assets */,
+				F208EA3A2C1258400040F4D1 /* ToyotaTests */,
+				F208EA442C1258400040F4D1 /* ToyotaTaskUITests */,
+				F208EA232C12583F0040F4D1 /* Products */,
+				D8942DBBB1581C378C329A9F /* Pods */,
+				0AF9AAAE74EC731FD4A3B91F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F208EA232C12583F0040F4D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F208EA222C12583F0040F4D1 /* ToyotaTask.app */,
+				F208EA372C1258400040F4D1 /* ToyotaTaskTests.xctest */,
+				F208EA412C1258400040F4D1 /* ToyotaTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F208EA242C12583F0040F4D1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F208EA292C1258400040F4D1 /* Assets.xcassets */,
+				F2D783B62C13EE11001BF9A3 /* Localizable.xcstrings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F208EA3A2C1258400040F4D1 /* ToyotaTests */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2C8E2C14C4B00046BEC9 /* Models */,
+				F28C2C8F2C14C4F90046BEC9 /* ViewModels */,
+				F28C2C902C14C50A0046BEC9 /* Utilities */,
+				F28C2C912C14C5590046BEC9 /* Services */,
+			);
+			path = ToyotaTests;
+			sourceTree = "<group>";
+		};
+		F208EA442C1258400040F4D1 /* ToyotaTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2CAA2C14FEB90046BEC9 /* LaunchScreenViewUITests.swift */,
+			);
+			path = ToyotaTaskUITests;
+			sourceTree = "<group>";
+		};
+		F2673AEB2C1266B000740EFD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F2673AEC2C1266CF00740EFD /* MyAPI.swift */,
+				F2673AEE2C12675A00740EFD /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F28C2C8E2C14C4B00046BEC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2C922C14C5A30046BEC9 /* MealsResponseTests.swift */,
+				F28C2C942C14C60F0046BEC9 /* MealDetailsTests.swift */,
+				F28C2C962C14C6930046BEC9 /* CategoriesResponseTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F28C2C8F2C14C4F90046BEC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2CA42C14DF4B0046BEC9 /* MealsViewModelTests.swift */,
+				F28C2CA62C14F8330046BEC9 /* MealDetailViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F28C2C902C14C50A0046BEC9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2CA02C14DCDB0046BEC9 /* StringLocalizationTests.swift */,
+				F28C2CA22C14DD360046BEC9 /* AppDependenciesTests.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F28C2C912C14C5590046BEC9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2C9A2C14CDE90046BEC9 /* MyAPITests.swift */,
+				F28C2C9C2C14D2390046BEC9 /* NetworkServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F28C2CB02C1601A80046BEC9 /* MealsList */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BF62C1285F700F00A28 /* MealsListView.swift */,
+				F2AF26972C359D4200ECB3EC /* SearchOptionPicker.swift */,
+				F28C2CB42C1602630046BEC9 /* CategoryPickerView.swift */,
+				F28C2CB62C1603080046BEC9 /* SearchTextFieldView.swift */,
+				F28C2CB82C16033D0046BEC9 /* MealsList.swift */,
+				F28C2CBA2C1606EB0046BEC9 /* NoResultsView.swift */,
+			);
+			path = MealsList;
+			sourceTree = "<group>";
+		};
+		F28C2CB12C1602020046BEC9 /* MealDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BF82C12861900F00A28 /* MealDetailView.swift */,
+				F28C2CBC2C1607CA0046BEC9 /* IngredientsListView.swift */,
+				F28C2CBE2C1608010046BEC9 /* MealInfoView.swift */,
+			);
+			path = MealDetail;
+			sourceTree = "<group>";
+		};
+		F2FF5BEB2C12692500F00A28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BEC2C126B1C00F00A28 /* MealsResponse.swift */,
+				F2FF5BEE2C126CD400F00A28 /* MealDetailsResponse.swift */,
+				F2FF5BFB2C134E1800F00A28 /* CategoriesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2FF5BF02C12855300F00A28 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BF12C12858C00F00A28 /* MealsViewModel.swift */,
+				F2FF5BF32C1285AD00F00A28 /* MealDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F2FF5BF52C1285CF00F00A28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F28C2CB12C1602020046BEC9 /* MealDetail */,
+				F28C2CB02C1601A80046BEC9 /* MealsList */,
+				F208EA272C12583F0040F4D1 /* LaunchScreenView.swift */,
+				F208EA252C12583F0040F4D1 /* ToyotaTaskApp.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2FF5BFA2C12867200F00A28 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F2FF5BFD2C1399EF00F00A28 /* Reachability.swift */,
+				F2FF5C002C139FA500F00A28 /* AppDependencies.swift */,
+				F2D783B82C13EF90001BF9A3 /* String+Localization.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F208EA212C12583F0040F4D1 /* ToyotaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208EA4B2C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTask" */;
+			buildPhases = (
+				63168FD7B8E366A6D33FA0AC /* [CP] Check Pods Manifest.lock */,
+				F208EA1E2C12583F0040F4D1 /* Sources */,
+				F208EA1F2C12583F0040F4D1 /* Frameworks */,
+				F208EA202C12583F0040F4D1 /* Resources */,
+				C76D8D0D589CB6EE0A17AD0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToyotaTask;
+			productName = FetchRewards;
+			productReference = F208EA222C12583F0040F4D1 /* ToyotaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F208EA362C1258400040F4D1 /* ToyotaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208EA4E2C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTaskTests" */;
+			buildPhases = (
+				F55A8851FB21750EC43C8BD5 /* [CP] Check Pods Manifest.lock */,
+				F208EA332C1258400040F4D1 /* Sources */,
+				F208EA342C1258400040F4D1 /* Frameworks */,
+				F208EA352C1258400040F4D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F208EA392C1258400040F4D1 /* PBXTargetDependency */,
+			);
+			name = ToyotaTaskTests;
+			productName = FetchRewardsTests;
+			productReference = F208EA372C1258400040F4D1 /* ToyotaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F208EA402C1258400040F4D1 /* ToyotaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F208EA512C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTaskUITests" */;
+			buildPhases = (
+				7AD2E4AD0CCCEC1D845A148D /* [CP] Check Pods Manifest.lock */,
+				F208EA3D2C1258400040F4D1 /* Sources */,
+				F208EA3E2C1258400040F4D1 /* Frameworks */,
+				F208EA3F2C1258400040F4D1 /* Resources */,
+				42DC03B8B73CB0D92FB0F90F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F208EA432C1258400040F4D1 /* PBXTargetDependency */,
+			);
+			name = ToyotaTaskUITests;
+			productName = FetchRewardsUITests;
+			productReference = F208EA412C1258400040F4D1 /* ToyotaTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F208EA1A2C12583F0040F4D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F208EA212C12583F0040F4D1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F208EA362C1258400040F4D1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F208EA212C12583F0040F4D1;
+					};
+					F208EA402C1258400040F4D1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F208EA212C12583F0040F4D1;
+					};
+				};
+			};
+			buildConfigurationList = F208EA1D2C12583F0040F4D1 /* Build configuration list for PBXProject "ToyotaTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F208EA192C12583F0040F4D1;
+			productRefGroup = F208EA232C12583F0040F4D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F208EA212C12583F0040F4D1 /* ToyotaTask */,
+				F208EA362C1258400040F4D1 /* ToyotaTaskTests */,
+				F208EA402C1258400040F4D1 /* ToyotaTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F208EA202C12583F0040F4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D783B72C13EE11001BF9A3 /* Localizable.xcstrings in Resources */,
+				F208EA2A2C1258400040F4D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA352C1258400040F4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA3F2C1258400040F4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42DC03B8B73CB0D92FB0F90F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask-ToyotaTaskUITests/Pods-ToyotaTask-ToyotaTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask-ToyotaTaskUITests/Pods-ToyotaTask-ToyotaTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask-ToyotaTaskUITests/Pods-ToyotaTask-ToyotaTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63168FD7B8E366A6D33FA0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyotaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD2E4AD0CCCEC1D845A148D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyotaTask-ToyotaTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C76D8D0D589CB6EE0A17AD0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask/Pods-ToyotaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask/Pods-ToyotaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToyotaTask/Pods-ToyotaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F55A8851FB21750EC43C8BD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToyotaTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F208EA1E2C12583F0040F4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2FF5BF92C12861900F00A28 /* MealDetailView.swift in Sources */,
+				F2FF5BEF2C126CD400F00A28 /* MealDetailsResponse.swift in Sources */,
+				F2D783B92C13EF90001BF9A3 /* String+Localization.swift in Sources */,
+				F2FF5BFE2C1399EF00F00A28 /* Reachability.swift in Sources */,
+				F28C2CBB2C1606EB0046BEC9 /* NoResultsView.swift in Sources */,
+				F2673AED2C1266CF00740EFD /* MyAPI.swift in Sources */,
+				F208EA282C12583F0040F4D1 /* LaunchScreenView.swift in Sources */,
+				F208EA262C12583F0040F4D1 /* ToyotaTaskApp.swift in Sources */,
+				F2FF5BFC2C134E1800F00A28 /* CategoriesResponse.swift in Sources */,
+				F28C2CB92C16033D0046BEC9 /* MealsList.swift in Sources */,
+				F2FF5BF22C12858C00F00A28 /* MealsViewModel.swift in Sources */,
+				F28C2CBD2C1607CA0046BEC9 /* IngredientsListView.swift in Sources */,
+				F2673AEF2C12675A00740EFD /* NetworkService.swift in Sources */,
+				F28C2CBF2C1608010046BEC9 /* MealInfoView.swift in Sources */,
+				F28C2CB52C1602630046BEC9 /* CategoryPickerView.swift in Sources */,
+				F2FF5BF72C1285F700F00A28 /* MealsListView.swift in Sources */,
+				F2FF5C012C139FA500F00A28 /* AppDependencies.swift in Sources */,
+				F2AF26982C359D4200ECB3EC /* SearchOptionPicker.swift in Sources */,
+				F2FF5BF42C1285AD00F00A28 /* MealDetailViewModel.swift in Sources */,
+				F2FF5BED2C126B1C00F00A28 /* MealsResponse.swift in Sources */,
+				F28C2CB72C1603080046BEC9 /* SearchTextFieldView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA332C1258400040F4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28C2CA32C14DD360046BEC9 /* AppDependenciesTests.swift in Sources */,
+				F28C2C972C14C6930046BEC9 /* CategoriesResponseTests.swift in Sources */,
+				F28C2C952C14C60F0046BEC9 /* MealDetailsTests.swift in Sources */,
+				F28C2CA72C14F8330046BEC9 /* MealDetailViewModelTests.swift in Sources */,
+				F28C2C932C14C5A30046BEC9 /* MealsResponseTests.swift in Sources */,
+				F28C2CA12C14DCDB0046BEC9 /* StringLocalizationTests.swift in Sources */,
+				F28C2CA52C14DF4B0046BEC9 /* MealsViewModelTests.swift in Sources */,
+				F28C2C9D2C14D2390046BEC9 /* NetworkServiceTests.swift in Sources */,
+				F28C2C9B2C14CDE90046BEC9 /* MyAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F208EA3D2C1258400040F4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28C2CAB2C14FEB90046BEC9 /* LaunchScreenViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F208EA392C1258400040F4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F208EA212C12583F0040F4D1 /* ToyotaTask */;
+			targetProxy = F208EA382C1258400040F4D1 /* PBXContainerItemProxy */;
+		};
+		F208EA432C1258400040F4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F208EA212C12583F0040F4D1 /* ToyotaTask */;
+			targetProxy = F208EA422C1258400040F4D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F208EA492C1258400040F4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F208EA4A2C1258400040F4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F208EA4C2C1258400040F4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB590DF941721A1CA1B31B0 /* Pods-ToyotaTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F208EA4D2C1258400040F4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA9D3CA6AB7D6889AF0E288 /* Pods-ToyotaTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F208EA4F2C1258400040F4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FC44B7FE97B0627588D31D /* Pods-ToyotaTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards.FetchRewardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToyotaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToyotaTask";
+			};
+			name = Debug;
+		};
+		F208EA502C1258400040F4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466C15AAE54C8B767079A334 /* Pods-ToyotaTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards.FetchRewardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToyotaTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ToyotaTask";
+			};
+			name = Release;
+		};
+		F208EA522C1258400040F4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0298F5E7791BC84878BF7ACC /* Pods-ToyotaTask-ToyotaTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards.FetchRewardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchRewards;
+			};
+			name = Debug;
+		};
+		F208EA532C1258400040F4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F2C811DBF60ED63B63DCC0 /* Pods-ToyotaTask-ToyotaTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74B95GHWXG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fetchrewards.FetchRewardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FetchRewards;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F208EA1D2C12583F0040F4D1 /* Build configuration list for PBXProject "ToyotaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208EA492C1258400040F4D1 /* Debug */,
+				F208EA4A2C1258400040F4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F208EA4B2C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208EA4C2C1258400040F4D1 /* Debug */,
+				F208EA4D2C1258400040F4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F208EA4E2C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208EA4F2C1258400040F4D1 /* Debug */,
+				F208EA502C1258400040F4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F208EA512C1258400040F4D1 /* Build configuration list for PBXNativeTarget "ToyotaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F208EA522C1258400040F4D1 /* Debug */,
+				F208EA532C1258400040F4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F208EA1A2C12583F0040F4D1 /* Project object */;
+}
